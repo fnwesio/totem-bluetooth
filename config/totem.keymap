@@ -77,7 +77,7 @@
             label = "BASE";
             bindings = <
                          &kp Q  &kp W  &kp E             &kp R         &kp T          &kp Y        &kp U                     &kp I         &kp O    &kp P
-                         &kp A  &kp S  &kp D             &kp F         &kp G          &kp H        &kp J                     &kt K         &kt L    &kp SEMICOLON
+                         &kp A  &kp S  &kp D             &kp F         &kp G          &kp H        &kp J                     &kp K         &kp L    &kp SEMICOLON
 &mt LEFT_CONTROL ESCAPE  &kp Z  &kp X  &kp C             &kp V         &kp B          &kp N        &kp M                     &kp COMMA     &kp DOT  &kp FSLH       &kp SQT
                                        &sk LEFT_CONTROL  &kp LEFT_GUI  &lt 1 SPACE    &lt 2 ENTER  &mt LEFT_SHIFT BACKSPACE  &sk LEFT_ALT
             >;
@@ -88,20 +88,20 @@
         nav_layer {
             label = "NAV";
             bindings = <
-         &kp NUMBER_1      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PAGE_UP      &kp LC(TAB)    &kp LS(LC(TAB))    &kp N8            &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC
-         &kp LS(LEFT_GUI)  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N0           &kp LEFT       &kp DOWN           &kp UP            &kp RIGHT             &kp C_VOLUME_UP
-&kp END  &kp LEFT_GUI      &kp N7        &kp N8        &kp N9        &kp PAGE_DOWN    &kp LC(LA(R))  &kp K_PREVIOUS     &kp K_PLAY_PAUSE  &kp K_NEXT            &kp C_VOLUME_DOWN     &kp HOME
-                                         &trans        &trans        &trans           &kp LS(ENTER)  &kp LC(BACKSPACE)  &kp BACKSPACE
+         &sk LS(LEFT_CONTROL)  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PAGE_UP      &kp LC(TAB)        &kp LS(LC(TAB))    &kp N8            &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC
+         &kp LS(LEFT_GUI)      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N0           &kp LEFT           &kp DOWN           &kp UP            &kp RIGHT             &kp C_VOLUME_UP
+&kp END  &kp LEFT_GUI          &kp N7        &kp N8        &kp N9        &kp PAGE_DOWN    &kp LC(LA(LG(R)))  &kp K_PREVIOUS     &kp K_PLAY_PAUSE  &kp K_NEXT            &kp C_VOLUME_DOWN     &kp HOME
+                                             &trans        &trans        &trans           &kp LS(ENTER)      &kp LC(BACKSPACE)  &kp BACKSPACE
             >;
         };
 
         sim_layer {
             label = "SYM";
             bindings = <
-                &kp LS(N1)  &kp LS(N1)       &kp LS(N2)       &kp LS(N3)       &kp LS(N4)     &kp LS(N5)    &kp LS(N6)    &kp LS(N7)    &kp LS(N8)  &kp LS(N8)
-                &kp CAPS    &kp LBKT         &kp LS(LBKT)     &kp N9           &kp AT_SIGN    &kp F12       &kp N0        &kp LS(RBKT)  &kp RBKT    &none
-&kp KP_NUMLOCK  &kp DEL     &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_4  &kp KP_DOT     &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PREV    &kp C_NEXT  &none       &trans
-                                             &kp CAPSLOCK     &kp LC(DELETE)   &kp DELETE     &kp SPACE     &kp C_PP      &trans
+                &kp LS(N1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N4)     &kp LS(N5)    &kp LS(N5)    &kp LS(NUMBER_6)  &kp LS(N7)  &kp LS(N8)
+                &kp CAPS    &kp LBKT          &kp LS(LBKT)      &kp N9            &kp AT_SIGN    &kp F12       &kp N0        &kp LS(RBKT)      &kp RBKT    &none
+&kp KP_NUMLOCK  &kp DEL     &kp KP_NUMBER_1   &kp KP_NUMBER_2   &kp KP_NUMBER_4   &kp KP_DOT     &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PREV        &kp C_NEXT  &none       &bt BT_CLR_ALL
+                                              &kp CAPSLOCK      &kp LC(DELETE)    &kp DELETE     &kp SPACE     &kp C_PP      &trans
             >;
         };
 
