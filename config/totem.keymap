@@ -33,7 +33,7 @@
         compatible = "zmk,combos";
 
         minus {
-            bindings = <&kt MINUS>;
+            bindings = <&kp MINUS>;
             key-positions = <8 9>;
         };
 
