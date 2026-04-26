@@ -32,49 +32,24 @@
     combos {
         compatible = "zmk,combos";
 
-        c1 {
-            bindings = <&kp LBKT>;
-            key-positions = <3 2>;
+        minus {
+            bindings = <&kt MINUS>;
+            key-positions = <8 9>;
         };
 
-        c2 {
-            bindings = <&kp RBKT>;
-            key-positions = <6 7>;
+        plus {
+            bindings = <&kp PLUS>;
+            key-positions = <29 30>;
         };
 
-        c3 {
-            bindings = <&kp LPAR>;
-            key-positions = <13 12>;
-        };
-
-        c4 {
-            bindings = <&kp RPAR>;
-            key-positions = <16 17>;
-        };
-
-        c5 {
-            bindings = <&kp LBRC>;
-            key-positions = <24 23>;
-        };
-
-        c6 {
-            bindings = <&kp RBRC>;
-            key-positions = <27 28>;
-        };
-
-        c7 {
-            bindings = <&kp BSLH>;
+        tilde {
+            bindings = <&kp TILDE>;
             key-positions = <4 5>;
         };
 
-        c8 {
-            bindings = <&kp PIPE>;
+        rslash {
+            bindings = <&kp NON_US_BACKSLASH>;
             key-positions = <14 15>;
-        };
-
-        c9 {
-            bindings = <&kp ENTER>;
-            key-positions = <18 19>;
         };
     };
 
@@ -111,9 +86,7 @@
         compatible = "zmk,keymap";
 
         base_layer {
-
             label = "BASE";
-     
             bindings = <
            &kp Q       &kp W       &kp E        &kp R        &kp T        &kp Y     &kp U            &kp I        &kp O       &kp P
            &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F  &kp G        &kp H     &mt RSHFT J      &mt RCTRL K  &mt RALT L  &mt RGUI SEMICOLON
@@ -125,9 +98,7 @@
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
         nav_layer {
-
-             label = "NAV";
-
+            label = "NAV";
             bindings = <
         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5     &kp NUMBER_6  &kp N7      &kp N8     &kp N9  &kp N0
         &none         &none         &none         &none         &kp F12    &kp MINUS     &kp EQUAL   &kp GRAVE  &none   &kp SQT
@@ -136,22 +107,18 @@
             >;
         };
 
-    
         sim_layer {
-           
             label = "SYM";
-
             bindings = <
                 &kp ESC   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0    &kp CARET     &kp PAGE_UP   &kp UP_ARROW  &kp PAGE_DOWN  &none
                 &kp CAPS  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp AT_SIGN        &kp C_MUTE    &kp LEFT      &kp DOWN      &kp RIGHT      &none
 &kp KP_NUMLOCK  &kp DEL   &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_4  &kp KP_DOT         &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PREV    &kp C_NEXT     &none  &trans
-                                           &trans           &gif             &mo 3              &kp SPACE        &kp C_PP      &trans
+                                           &trans           &gif             &mo 3              &kp SPACE     &kp C_PP      &trans
             >;
         };
 
         adjust_layer {
             label = "ADJ";
-
             bindings = <
         &sys_reset   &bt BT_CLR  &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2    &trans  &kp F7  &kp F8  &kp F9  &kp F12
         &bootloader  &bt BT_NXT  &bt BT_CLR_ALL  &trans        &trans          &trans  &kp F4  &kp F5  &kp F6  &kp F11
