@@ -108,7 +108,7 @@
             label = "SYM";
             bindings = <
             &kp LS(N1)  &kp LS(N2)  &kp LS(N3)    &kp LS(N4)   &kp LS(N4)    &kp LS(N5)    &kp LS(N5)    &kp LS(N6)    &kp LS(N7)  &kp LS(N8)
-            &kp CAPS    &kp LBKT    &kp LS(LBKT)  &kp N9       &kp AT        &kp F12       &kp N0        &kp LS(RBKT)  &kp RBKT    &none
+            &kp CAPS    &kp LBKT    &kp LS(LBKT)  &kp LS(N9)   &kp AT        &kp F12       &kp LS(N0)    &kp LS(RBKT)  &kp RBKT    &none
 &kp KP_NUM  &kp DEL     &kp KP_N1   &kp KP_N2     &kp KP_N4    &kp KP_DOT    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PREV    &kp C_NEXT  &none       &none
                                     &kp CAPSLOCK  &kp LC(DEL)  &kp DEL       &kp SPACE     &kp C_PP      &trans
             >;
