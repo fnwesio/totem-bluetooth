@@ -98,10 +98,10 @@
         sim_layer {
             label = "SYM";
             bindings = <
-                &kp ESC   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0    &kp CARET     &kp PAGE_UP   &kp UP_ARROW  &kp PAGE_DOWN  &none
-                &kp CAPS  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp AT_SIGN        &kp C_MUTE    &kp LEFT      &kp DOWN      &kp RIGHT      &none
-&kp KP_NUMLOCK  &kp DEL   &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_4  &kp KP_DOT         &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PREV    &kp C_NEXT     &none  &trans
-                                           &trans           &gif             &mo 3              &kp SPACE     &kp C_PP      &trans
+                &kp LS(N1)  &kp LS(N1)       &kp LS(N2)       &kp LS(N3)       &kp LS(N4)     &kp LS(N5)    &kp LS(N6)    &kp LS(N7)    &kp LS(N8)  &kp LS(N8)
+                &kp CAPS    &kp LBKT         &kp LS(LBKT)     &kp N9           &kp AT_SIGN    &kp F12       &kp N0        &kp LS(RBKT)  &kp RBKT    &none
+&kp KP_NUMLOCK  &kp DEL     &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_4  &kp KP_DOT     &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PREV    &kp C_NEXT  &none       &trans
+                                             &kp CAPSLOCK     &kp LC(DELETE)   &kp DELETE     &kp SPACE     &kp C_PP      &trans
             >;
         };
 
